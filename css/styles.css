@@ -126,7 +126,6 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
-  border-radius: 4px;
 }
 .button-order-service:hover,
 .button-order-service:focus {
