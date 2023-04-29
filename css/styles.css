@@ -95,6 +95,8 @@ img {
 /* section first */
 .section-first {
   background-color: var(--accent-background-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .heder-style {
   font-family: var(--main-font-family);
@@ -104,6 +106,8 @@ img {
 
   letter-spacing: 0.02em;
   color: #ffffff;
+
+  max-width: 496px;
 }
 .button-order-service {
   background: var(--accent-color);
@@ -115,10 +119,14 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   color: #ffffff;
-
   cursor: pointer;
+
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .button-order-service:hover,
 .button-order-service:focus {
