@@ -264,6 +264,8 @@ img {
 .logo-footer {
 }
 .footer {
+  padding: 100px 0;
+  background: #2e2f42;
 }
 .logo-footer {
   font-family: var(--secondary-font-family);
@@ -275,6 +277,8 @@ img {
   text-transform: uppercase;
 
   color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -285,6 +289,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
+  max-width: 264px;
+  text-align: start;
 }
 /* PORTFOLIO */
 .btn-decoration:hover,
