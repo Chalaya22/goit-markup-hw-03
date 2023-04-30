@@ -134,6 +134,15 @@ img {
 }
 /* section-second */
 .section-second {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-second-list {
+  display: flex;
+  gap: 24px;
+}
+.section-second-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .name-of-heder {
   font-family: var(--main-font-family);
@@ -143,6 +152,7 @@ img {
 
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .paragraf-section-second {
   font-family: var(--main-font-family);
