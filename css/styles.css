@@ -10,15 +10,34 @@ body {
   --accent-color-second: #404bbf;
   --accent-background-color: #2e2f42;
 }
+/* всі зображення повині бути блоковими */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+/* скидання дефолтного стиля маркера */
 .list {
   list-style: none;
   padding: 0;
 }
+/* скидання дефолтного стиля підкреслювання */
 .link {
   text-decoration: none;
+}
+/* скидання обовязкове відступів заголовків та параграфів, які є у браузері по замовченню */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 /* heder */
@@ -34,6 +53,7 @@ img {
 .nav-content {
   display: flex;
   align-items: center;
+  margin-right: 332px;
 }
 .logo {
   font-family: var(--secondary-font-family);
@@ -97,10 +117,11 @@ img {
 .container {
   padding: 0 15px;
   width: 1158px;
-  margin: 0 auto;
-
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
+/* в секціях потрібно вказувати тільки падінги */
 .section-first {
   background-color: var(--accent-background-color);
   padding-top: 188px;
@@ -116,8 +137,9 @@ img {
   color: #ffffff;
 
   max-width: 496px;
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  /* margin-right: auto;
+  margin-left: auto; - це альтернатива margin: 0 auto;*/
 }
 .button-order-service {
   background: var(--accent-color);
@@ -137,6 +159,10 @@ img {
   height: 56px;
   border: none;
   border-radius: 4px;
+
+  margin-top: 48px;
+  /* щоб було посередені  margin: 0 auto; */
+  margin: 0 auto;
 }
 .button-order-service:hover,
 .button-order-service:focus {
@@ -144,8 +170,6 @@ img {
 }
 /* section-second */
 .heder-section-second {
-  padding: 0;
-  margin: 0;
 }
 .section-second {
   padding-top: 120px;
@@ -261,10 +285,9 @@ img {
   padding: 32px 16px;
 }
 /* footer */
-.logo-footer {
-}
+
 .footer {
-  padding: 100px 0;
+  padding: 100px 156px;
   background: #2e2f42;
 }
 .logo-footer {
@@ -277,7 +300,7 @@ img {
   text-transform: uppercase;
 
   color: var(--accent-color);
-  display: inline-block;
+  display: flex;
   margin-bottom: 16px;
 }
 .logo-studio-footer {
